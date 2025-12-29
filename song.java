@@ -1,62 +1,68 @@
+package com.EndieFirstProje;
+
+public class Song {
+   
+private String title;
+private String artist;
+private String album;
+   private String genre;
 
 
-public class song {
     
-    private String title;
-    private String artist;
-    private int duration;
+    public Song (String title,String artist,String album, String genre ) {
     
-    // constructor
-    
-    public song (String t,String a, int d) 
-    {
-       title = t;
-        artist = a;
-       duration = d;
-        
-    }
-        
-      public String  getTitle ()
-        {
-            
-         return title;   
-            
-        }
-        public  String  getArtist ()
-        {
-            
-         return artist;   
-            
-        }
-    public int getDuration()
-        {
-            
-         return duration;   
-            
-        }
-        
-        
-        public String  toString() {
-            return title + " by " + artist;
-        
-        }
-        
-        
-        public static void main ( String []args)
-
-    {
-        
-        songg sprinter = new song( "sprinter","central cee",229);
-        
-        System.out.println(sprinter);
-        
-        
-    }
+   this.title = title;
+    this.artist = artist;
+     this.album = album;
+    this.genre = genre;
+   
     
     
 }
+
     
-}
+   public String getTitle() {
+      
+      return title;
+   }
+    
+    public String getArtist() {
+      
+      return artist;
+   }
+   
+   public String getAlbum() {
+      
+      return album;
+   }
+    
+    public String getGenre() {
+      
+      return genre;
+   }
+   
+   
+   
+   public void displayInfo () {
+      
+      System.out.println( " title " + title);
+      System.out.println( " artist " + artist);
+      System.out.println( " album " + album);
+      System.out.println( " genre " + genre);
+      
+      
+      
+      
+      
+   }
+   
+   
+   
+   
+   
+   
+   
+   
    
     
     
@@ -64,6 +70,7 @@ public class song {
     
     
     
+} 
     
     
-    
+
